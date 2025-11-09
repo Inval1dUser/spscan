@@ -26,46 +26,50 @@ Clone the repo and run with Python:
 ```bash
    git clone https://github.com/Inval1dUser/spscan.git
    cd spscan
-   # Optionally create a virtual environment
-   python -m venv .venv
-```
-
-build the package
-
-```bash
-   pip install --upgrade build
-   python -m build
 ```
 
 install
 
 ```bash
-   pip install --force-reinstall dist/spscan-0.1.0-py3-none-any.whl
+   #create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate
+
+   #or if you are on windows
+source venv/scripts/activate
+```
+
+```bash
+#install in editable mode
+pip install -e .
+```
+or alternatively
+
+```bash
+pip install .
 ```
 
 ## Usage (example)
 
-The exact CLI flags depend on the implementation. Below are safe example usages you can adapt.
-
-Scan a single host for common ports:
+Scan a single host for ports 20-1024:
 
 ```bash
-   spscan 127.0.0.1--ports 20-1024
+   spscan 127.0.0.1 --start 20 --end 1024
 ```
 
-Quick scan with a short timeout:
+Quick scan with a long timeout:
 
 ```bash
-   python -m port_scanner --host 10.0.0.5 --ports 1-1024 --timeout 0.5
+   spscan 10.0.0.5 --timeout 3
 ```
 
 ## Example output
 
 ```
 Scanning 192.0.2.10 ports 1-1024
-Open: 22/tcp   (ssh)
-Open: 80/tcp   (http)
-Closed: 23/tcp
+threads: 100
+Open: 22
+Open: 80
 Scan complete. 2 open ports found.
 ```
 
