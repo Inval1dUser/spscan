@@ -28,17 +28,18 @@ Clone the repo and run with Python:
    cd spscan
 ```
 
-install
+create a virtual environment (optional but recommended)
 
 ```bash
-   #create a virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate
-
-   #or if you are on windows
+```
+or if you are on windows
+```bash
 source venv/scripts/activate
 ```
 
+Install
 ```bash
 #install in editable mode
 pip install -e .
