@@ -1,7 +1,3 @@
-Here’s a ready-to-use README you can paste into `README.md` for that repository.
-
-([GitHub][1])
-
 # Port Scanner
 
 A simple, minimal CLI port scanner written in Python.
