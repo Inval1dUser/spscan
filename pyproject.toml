@@ -1,0 +1,24 @@
+[project]
+name = "spscan"
+version = "0.1.0"
+authors = [
+  { name = "Beck Chandler", email = "becktchandler@gmail.com" },
+]
+description = "A simple port scanner"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "typer",
+]
+
+[project.urls]
+homepage = "https://github.com/Inval1dUser/Port_Scanner"
+
+[project.scripts]
+spscan = "main:app"

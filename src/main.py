@@ -1,10 +1,8 @@
 import concurrent
-
 import typer
 import sys
 import socket
 import ipaddress
-from typing import Optional
 from concurrent.futures import ThreadPoolExecutor
 
 app = typer.Typer()
@@ -62,7 +60,7 @@ def scan_main(ip_address : str, start_port : int, end_port : int, concurrency : 
         with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
             for port in range(start_port, end_port + 1):
                 executor.submit(scan_port, ip_address, port)
-            print(f"Finished scanning {ip_address}")
+        print(f"Finished scanning {ip_address}")
     else:
         print("Error: Start port must be less than end port")
 
