@@ -1,7 +1,3 @@
-Thanks for sharing the files. Based on your `pyproject.toml` and the contents of `main.py`, here is a complete and well-structured `README.md` for your project **spscan**:
-
----
-
 # spscan
 
 A simple and efficient port scanner built with Python and Typer. Designed for developers and security enthusiasts who want a quick tool to check open ports on a given host.
