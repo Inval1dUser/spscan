@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/spscan.egg-info/PKG-INFO
+src/spscan.egg-info/SOURCES.txt
+src/spscan.egg-info/dependency_links.txt
+src/spscan.egg-info/entry_points.txt
+src/spscan.egg-info/requires.txt
+src/spscan.egg-info/top_level.txt
