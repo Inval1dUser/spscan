@@ -70,11 +70,16 @@ Quick scan with a long timeout:
 ## Example output
 
 ```
-Scanning 192.0.2.10 ports 1-1024
-threads: 100
-Open: 22
-Open: 80
-Scan complete. 2 open ports found.
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1024/1024 [00:11<00:00, 92.91it/s]
+Scan complete.  3 open port(s) found.
+    Open Ports     
+┏━━━━━━┳━━━━━━━━━━┓
+┃ Port ┃ Service  ┃
+┡━━━━━━╇━━━━━━━━━━┩
+│   53 │ domain   │
+│  443 │ https    │
+│  853 │ domain-s │
+└──────┴──────────┘
 ```
 
 ## Contributing
