@@ -1,7 +1,6 @@
 # Port Scanner
 
-A simple, minimal CLI port scanner written in Python.
-This repository provides a lightweight proof-of-concept scanner for learning and local testing. Use only on hosts and networks you own or have explicit permission to scan. ([GitHub][1])
+A minimal CLI port scanner written in Python.
 
 ## Features
 
